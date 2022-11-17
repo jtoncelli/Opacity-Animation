@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+   <title>Opacity Lab</title>
+  </head>
+  <style>
+    .container {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        margin: 30px;
+    }
+    .box {
+       width: 75%;
+       height: 50%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background: blue;
+       font-size: 150%;
+       animation: myanim 3s infinite;
+    }
+    .overlay {
+       z-index: 9;
+       margin: 30px;
+       background: purple;
+       animation: myanim 3s infinite;
+       animation-delay: 500ms;
+    }
+    .overlay2 {
+       z-index: 9;
+       margin: 60px;
+       background: green;
+       animation: myanim 3s infinite;
+       animation-delay: 1000ms;
+    }
+    body{
+       background-color: lightblue;
+    }
+    @keyframes myanim {
+     30% {
+     opacity: 0.4;
+    }
+  </style>
+
+  <body>
+     <h1>Opacity Animation</h1>
+       <div class = "container">
+        <div class = "box" >Check out</div>
+        <div class = "box overlay">a cool</div>
+        <div class = "box overlay2">animation</div> 
+       </div>
+  </body>
+</html>
